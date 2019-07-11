@@ -35,7 +35,7 @@ body{
     border-bottom: 2px solid #fff;
 }
 
-.about-site-badge{
+.about-site-waypoint{
     opacity:0;
     transition: all 400ms ease-in;
 }

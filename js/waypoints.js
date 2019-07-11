@@ -1,4 +1,8 @@
-var $badge = $('.about-site-badge');
+var $about = $('.about-me-waypoint')
+var $badge = $('.about-site-waypoint');
+var $projects = $('.project-waypoint')
+var $contact = $('.contact-waypoint')
+
 
 $badge.waypoint(function(direction) {
     if (direction == 'down'){
@@ -6,6 +10,6 @@ $badge.waypoint(function(direction) {
     } else {
         $badge.removeClass('js-badge-animate');
     }
-    console.log('waypoint');
+
 }, { offset: '75%'});
 

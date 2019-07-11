@@ -16,30 +16,33 @@
 		<link href="css/style.css" rel="stylesheet">
 	</head>
 
-	<body>
+	<body data-spy="scroll" data-target="#navbar-scrollspy">
 
 	<!--Main Navigation-->
 	<header>
 		<!--Navbar-->
-		<nav class="navbar navbar-expand-lg navbar-dark primary-color fixed-top">
-			<a class="navbar-brand" href="#">Navbar</a>
+		<nav id="navbar-scrollspy" class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+			<a class="navbar-brand" href="#intro">JustinReidy</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
 			aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav">
-				<li class="nav-item active">
-				<a class="nav-link" href="#intro">Home<span class="sr-only">(current)</span></a>
+				<li class="nav-item mr-4">
+					<a href="#intro" class="nav-link scroll-link">Home</a>
 				</li>
-				<li class="nav-item">
-				<a class="nav-link" href="#aboutMe">About Me</a>
+				<li class="nav-item mr-4">
+					<a class="nav-link scroll-link" href="#aboutMe">About Me</a>
 				</li>
-				<li class="nav-item">
-				<a class="nav-link" href="#aboutSite">About Site</a>
+				<li class="nav-item mr-4">
+					<a class="nav-link scroll-link" href="#aboutSite">About Site</a>
 				</li>
-				<li class="nav-item">
-				<a class="nav-link" href="#projects">Projects</a>
+				<li class="nav-item mr-4">
+					<a class="nav-link scroll-link" href="#projects">Projects</a>
+				</li>
+				<li class="nav-item mr-4">
+					<a href="#contact" class="nav-link scroll-link">Contact</a>
 				</li>
 			</ul>
 			</div>
@@ -162,10 +165,10 @@
 		<section id="aboutSite" class="text-center">
 
 			<!-- Heading -->
-			<h4 class="mb-4 font-weight-bold">About The Site</h4>
+			<h4 class="mb-4 font-weight-bold about-site-badge">About The Site</h4>
 
 			<!-- Grid Row -->
-			<div class="row d-flex justify-content-center mb-4">
+			<div class="row d-flex justify-content-center mb-4 about-site-badge">
 
 				<!-- Grid Column -->
 
@@ -187,11 +190,11 @@
 
 			<!-- Grid Column -->
 
-			<div class="col-lg-4 col-md-12 mb-4">
+			<div class="col-lg-4 col-md-12 mb-4 about-site-badge">
 
 				<div class="view overlay">
 
-					<img src="img/HTML5.png" class="img-fluid mx-auto" width="100 rem" alt="HTML 5 Badge">
+					<img  src="img/HTML5.png" class="img-fluid mx-auto" width="100 rem" alt="HTML 5 Badge">
 					<div class="mask rgba-white-slight"></div>
 
 				</div>
@@ -203,7 +206,7 @@
 			<!-- Grid Column -->
 
 				<!-- Grid Column -->
-				<div class="col-lg-4 col-md-6 mb-4">
+				<div class="col-lg-4 col-md-6 mb-4 about-site-badge">
 
 					<div class="view overlay">
 
@@ -219,11 +222,11 @@
 				<!-- Grid Column -->
 
 			<!-- Grid Column -->
-			<div class="col-lg-4 col-md-6 mb-4">
+			<div class="col-lg-4 col-md-6 mb-4 about-site-badge">
 
 				<div class="view overlay">
 
-					<img src="img/ES6.png" class="img-fluid mx-auto" width="90 rem" alt="ES 6 Badge">
+					<img src="img/ES6.png" class="img-fluid mx-auto " width="90 rem" alt="ES 6 Badge">
 					<div class="mask rgba-white-slight"></div>
 
 				</div>
@@ -244,7 +247,7 @@
 
 				<!-- Grid Column -->
 
-				<div class="col-lg-4 col-md-12 mb-4">
+				<div class="col-lg-4 col-md-12 mb-4 about-site-badge">
 
 					<div class="view overlay">
 
@@ -260,7 +263,7 @@
 				<!-- Grid Column -->
 
 				<!-- Grid Column -->
-				<div class="col-lg-4 col-md-6 mb-4">
+				<div class="col-lg-4 col-md-6 mb-4 about-site-badge">
 
 					<div class="view overlay">
 
@@ -276,7 +279,7 @@
 				<!-- Grid Column -->
 
 				<!-- Grid Column -->
-				<div class="col-lg-4 col-md-6 mb-4">
+				<div class="col-lg-4 col-md-6 mb-4 about-site-badge">
 
 					<div class="view overlay">
 
@@ -522,7 +525,7 @@
 
 						<input type="hidden" name="_subject" value="Contact Form Submition">
 						<input type="hidden" name="_after" value="#!">
-						<input type="hidden" name='redirect' value="justin"
+						<input type="hidden" name='redirect' value="justin">
 
 						<div class="text-center">
 
@@ -734,13 +737,21 @@
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<!-- MDB core JavaScript -->
 	<script type="text/javascript" src="js/mdb.min.js"></script>
+	<!-- JQuery Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/waypoints.js"></script>
+	<!-- ScrollSpy -->
+	<script>$('body').scrollspy({ target: '#navbar-scrollspy', offset: 105 })</script>
+	<!--Smooth Scroll-->
+	<script src="js/smooth-scroll.min.js"></script>
+	<script>var scroll = new SmoothScroll('a[href*="#"]');</script>
 
 	<!-- Google Maps API -->
-	<script type="text/javascript" src="https://maps.google.com/maps/api/js?key=[API_KEY]&callback=initMap" async defer></script>
+	<!-- <script type="text/javascript" src="https://maps.google.com/maps/api/js?key=[API_KEY]&callback=initMap" async defer></script> -->
 
 		<!-- API Settings -->
 
-		<script>
+		<!-- <script>
 
 			//Regular Map
 			var map;
@@ -758,7 +769,7 @@
 				});
 			}
 
-		</script>
+		</script> --> 
 
 		<!-- API Settings -->
 

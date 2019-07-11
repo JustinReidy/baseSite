@@ -18,3 +18,47 @@ html{
     scroll-behavior: smooth;
 
 }
+
+body{
+    position: relative;
+}
+
+.top-nav-collapse{
+    background-color: #24355c;
+}
+
+.nav-link:hover{
+    border-bottom: 2px solid #fff;
+}
+
+.active{
+    border-bottom: 2px solid #fff;
+}
+
+.about-site-badge{
+    opacity:0;
+    transition: all 400ms ease-in;
+}
+
+.js-badge-animate{
+    opacity: 1;
+    animation: aboutSite-jiggle 600ms;
+}
+
+@keyframes aboutSite-jiggle{
+    0%{
+        transform: rotate(0);
+    }
+
+    33%{
+        transform: rotate(15deg);
+    }
+
+    66%{
+        transform: rotate(-15deg);
+    }
+
+    100%{
+        transform: rotate(0);
+    }
+}

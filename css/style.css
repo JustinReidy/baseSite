@@ -23,14 +23,6 @@ body{
     position: relative;
 }
 
-.top-nav-collapse{
-    background-color: #24355c;
-}
-
-.nav-link:hover{
-    border-bottom: 2px solid #fff;
-}
-
 .active{
     border-bottom: 2px solid #fff;
 }
@@ -43,6 +35,25 @@ body{
 .js-badge-animate{
     opacity: 1;
     animation: aboutSite-jiggle 600ms;
+}
+
+/* Media Querys */
+
+/*Sm Sized Screens and Down*/
+@media screen and (max-width: 767.98px){
+    .nav-sm-query{
+        background-color: #24355c;
+    }
+}
+
+/*Md Sized Screen and Up*/
+@media screen and (min-width: 768px){
+    .nav-link:hover{
+        border-bottom: 2px solid #fff;
+    }
+    .top-nav-collapse{
+        background-color: #24355c;
+    }
 }
 
 @keyframes aboutSite-jiggle{

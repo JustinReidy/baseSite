@@ -44,6 +44,10 @@ body{
     .nav-sm-query{
         background-color: #24355c;
     }
+
+    .navbar {
+        padding-top: 30 rem;
+    }
 }
 
 /*Md Sized Screen and Up*/

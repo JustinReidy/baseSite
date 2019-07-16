@@ -37,16 +37,30 @@ body{
     animation: aboutSite-jiggle 600ms;
 }
 
+.about-me-animate{
+
+}
+
+.projects-animate{
+    
+}
+
+
+.contact-animate{
+    
+}
+
+
+.top-nav-collapse{
+    background-color: #24355c;
+}
+
 /* Media Querys */
 
 /*Sm Sized Screens and Down*/
 @media screen and (max-width: 767.98px){
-    .nav-sm-query{
-        background-color: #24355c;
-    }
-
-    .navbar {
-        padding-top: 30 rem;
+    .top-nav-collapse{
+        padding-top: 30px;
     }
 }
 
@@ -54,9 +68,6 @@ body{
 @media screen and (min-width: 768px){
     .nav-link:hover{
         border-bottom: 2px solid #fff;
-    }
-    .top-nav-collapse{
-        background-color: #24355c;
     }
 }
 

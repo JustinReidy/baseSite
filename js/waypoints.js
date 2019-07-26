@@ -3,14 +3,14 @@ var $badge = $('.about-site-waypoint');
 var $projects = $('.project-waypoint')
 var $contact = $('.contact-waypoint')
 
-$about.waypoint(function(direction) {
-    if (direction == 'down'){
-       $about.addClass('js-badge-animate');
-    } else {
-        $about.removeClass('js-badge-animate');
-    }
+// $about.waypoint(function(direction) {
+//     if (direction == 'down'){
+//        $about.addClass('js-badge-animate');
+//     } else {
+//         $about.removeClass('js-badge-animate');
+//     }
 
-}, { offset: '75%'});
+// }, { offset: '75%'});
 
 $badge.waypoint(function(direction) {
     if (direction == 'down'){
